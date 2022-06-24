@@ -1,4 +1,4 @@
-# ICS2O-Template-HTML-PWA
+# ICS2O-Assigment-5-HTML
 
 [![GitHub's Super Linter](https://github.com/MT-Aiden/ICS2O-Assigment-5-HTML/workflows/GitHub's%20Super%20Linter/badge.svg)](https://github.com/ICS2O-Assigment-5-HTML/actions)
 
