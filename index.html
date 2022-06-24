@@ -1,45 +1,54 @@
 <!DOCTYPE html>
-<!-- ICS2O-Template-HTML-PWA -->
-<html>
+<!-- Aiden McLeod | ICS2O-Assignment5-HTML | April 25 2022 -->
+<html lang="en-ca">
   <head>
-    <meta charset="utf-8" />
-    <meta name="description" content="UNIT-3-03" />
-    <meta name="keywords" content="mths, ics2o" />
-    <meta name="author" content="Aiden McLeod" />
+    <meta charset="utf-8">
+    <meta name="description" content="Test site for ICS2O">
+    <meta name="keywords" content="mths, ICS2O">
+    <meta name="author" content="Aiden McLeod">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <link rel="canonical" href="https://MT-Aiden.github.io/ICS2O-Assignment5-HTML/" />
+    <link rel="manifest" href="/ICS2O-Assignment5-HTML/manifest.webmanifest" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"></noscript>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" media="none" onload="if(media!='all')media='all'"><noscript><link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"></noscript>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
-    <link
-      rel="stylesheet"
-      href="https://code.getmdl.io/1.3.0/material.deep_purple-indigo.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>volume of a sphere</title>
+    <title>Finding the Value of π With Numbers of Iterations</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
-    <h1><b>Volume of a sphere</b></h1>
-    <img src="./img/sphere.png" alt="circle" style="width:420;hieght:420;">
-    <h4><b>Enter the radius down below:</b></h4>
-        <!-- Numeric Textfield with Floating Label -->
+    <div class="mdl-layout mdl-js-layout">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout-icon"></div>
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout__title">Finding the Value of π With Numbers of Iterations</span>
+          <div class="mdl-layout-spacer"></div>
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="./">Index</a>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1>Enter number of iterations:</h1>
+    <!-- Numeric Textfield with Floating Label -->
     <form action="#">
       <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="radius">
-        <label class="mdl-textfield__label" for="sample4"><b>Radius</b></label>
-        <span class="mdl-textfield__error"><b>The radius must be a number</b></span>
+        <input class="mdl-textfield__input" type="number" id="number-of-iterations">
+        <label class="mdl-textfield__label" for="number-of-iterations">Number...</label>
+        <span class="mdl-textfield__error">This input is not allowed.</span>
       </div>
     </form>
-        <!-- Accent-colored raised button with ripple -->
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="calculate()">
-      calculate
+    <!-- Accent-colored raised button with ripple -->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="onButtonClick()">
+      Calculate
     </button>
-    <div id="volume"></div>
+    <div id="result"></div>
   </body>
 </html>
